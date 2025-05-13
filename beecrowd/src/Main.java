@@ -5,20 +5,11 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        int a;
-        int b;
-        int c;
-        int maiorAB;
-        int maior;
+      int X = scanner.nextInt();
+      double Y = scanner.nextDouble();
+      double consumo = X / Y;
 
-       a = scanner.nextInt();
-       b = scanner.nextInt();
-       c = scanner.nextInt();
-
-       maiorAB = (a + b + Math.abs(a - b)) / 2;
-       maior = (maiorAB + c + Math.abs(maiorAB - c)) / 2;
-
-        System.out.println(maior + " eh o maior");
+        System.out.printf("%.3f km/l\n", consumo);
 
         scanner.close();
     }
