@@ -5,15 +5,17 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        int horasGastas = scanner.nextInt();
-        int velocidade = scanner.nextInt();
-        double litros = 12;
-        double dp;
-        double total;
+        int A = scanner.nextInt();
+        int B = scanner.nextInt();
+        int C = scanner.nextInt();
+        int D = scanner.nextInt();
 
-        dp = velocidade * horasGastas;
-        total = dp / litros;
-        System.out.printf("%.3f\n", total);
+        if (B > C && D > A && C + D > A + B && C > 0 && D > 0 && A % 2 == 0){
+            System.out.println("Valores aceitos");
+        }
+        else {
+            System.out.println("Valores nao aceitos");
+        }
 
         scanner.close();
     }
